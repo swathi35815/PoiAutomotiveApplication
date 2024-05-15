@@ -6,9 +6,11 @@ import androidx.car.app.model.Action
 import androidx.car.app.model.MessageTemplate
 import androidx.car.app.model.Pane
 import androidx.car.app.model.PaneTemplate
+import androidx.car.app.model.Place
 import androidx.car.app.model.Row
 import androidx.car.app.model.Template
 import data.PlacesRepository
+import data.model.toIntent
 
 class DetailsScreen(carContext: CarContext, private val placeId: Int) : Screen(carContext) {
     override fun onGetTemplate(): Template {
@@ -18,8 +20,16 @@ class DetailsScreen(carContext: CarContext, private val placeId: Int) : Screen(c
             .setHeaderAction(Action.BACK)
             .build()
 
+        val navigateAction = Action.Builder()
+            .setTitle("Navigate")
+            .setOnClickListener {
+                carContext.startCarApp(place.toIntent(CarContext.ACTION_NAVIGATE))
+            }
+            .build()
+
         return PaneTemplate.Builder(
             Pane.Builder()
+                .addAction(navigateAction)
                 .addRow(
                     Row.Builder()
                         .setTitle("Coordinates")

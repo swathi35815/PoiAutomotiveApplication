@@ -1,5 +1,8 @@
 package data.model
 
+import android.content.Intent
+import androidx.core.net.toUri
+
 data class Place(
     var id : Int,
     var location_name : String,
@@ -12,3 +15,9 @@ data class Place(
     var hours : Float,
     var ticket : Float
 )
+
+fun Place.toIntent(action : String) : Intent {
+    return Intent(action).apply {
+        data = "geo:${latitude},${longitude}".toUri()
+    }
+}
