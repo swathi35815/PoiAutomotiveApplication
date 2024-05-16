@@ -22,15 +22,6 @@ import data.PlacesRepository
 class PoiScreen(carContext: CarContext) : Screen(carContext) {
     override fun onGetTemplate(): Template {
 
-        /*CarToast.makeText(carContext, "Hello!", CarToast.LENGTH_LONG).show()
-
-        // Pane Template
-        val row1 = Row.Builder().setTitle("Hello World!").build()
-        val pane = Pane.Builder().addRow(row1).build()
-        return PaneTemplate.Builder(pane)
-           .setHeaderAction(Action.BACK)
-           .build()*/
-
         val placesRepository = PlacesRepository()
         val itemListBuilder = ItemList.Builder().setNoItemsMessage("No Places Found")
 
