@@ -4,36 +4,6 @@ import data.model.Place
 
 val PLACES = listOf(
     Place(
-        9,
-        "Statue Of Liberty",
-        40.689249,
-        -74.044500,
-        "The latitude of Statue Of Liberty is 40.689249, and the longitude is -74.044500. Statue Of Liberty is located in New York City, United States with the gps coordinates of 40° 41' 21.2964'' N and 74° 2' 40.2'' W. The category of Statue Of Liberty is Monuments & Statues.\n" +
-                "\n" +
-                "The Statue of Liberty (Liberty Enlightening the World; French: La Liberté éclairant le monde) is a colossal neoclassical sculpture on Liberty Island in New York Harbor in New York City, in the United States. The copper statue, a gift from the people of France to the people of the United States, was designed by French sculptor Frédéric Auguste Bartholdi and built by Gustave Eiffel. The statue was dedicated on October 28, 1886.\n" +
-                "\n" +
-                "When you want to travel, you can view the local satellite map, book hotels and check shopping information near Statue Of Liberty in advance for your travel.",
-        5.0f,
-        "1 Liberty Island - Ellis Island, New York, NY 10004, USA",
-        "",
-        24.0f,
-        0.0f
-    ),
-    Place(
-        10,
-        "One World Observatory - World Trade Center",
-        40.713344,
-        -74.013368,
-        "The latitude of One World Observatory - World Trade Center is 40.713344, and the longitude is -74.013368. One World Observatory - World Trade Center is located in New York City, United States with the gps coordinates of 40° 42' 48.0384'' N and 74° 0' 48.1248'' W. The category of One World Observatory - World Trade Center is Observation Decks & Towers.\n" +
-                "\n" +
-                "When you want to travel, you can view the local satellite map, book hotels and check shopping information near One World Observatory - World Trade Center in advance for your travel.",
-        2.8f,
-        "285 Fulton St, New York, NY 10006, USA",
-        "",
-        24.0f,
-        0.0f
-    ),
-    Place(
         1,
         "Central Park",
         40.782865,
